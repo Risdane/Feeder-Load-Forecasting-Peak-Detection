@@ -1,6 +1,18 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-streamlit
-openpyxl
+# Core data handling
+pandas>=1.5
+numpy>=1.23
+
+# Visualization
+matplotlib>=3.7
+
+# Machine Learning
+scikit-learn>=1.2
+
+# Notebook environment
+jupyter
+
+# Excel support
+openpyxl>=3.1
+
+# Optional (for dashboard / extension)
+streamlit>=1.25

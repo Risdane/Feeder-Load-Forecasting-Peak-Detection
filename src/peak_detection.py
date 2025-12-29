@@ -1,4 +1,8 @@
 import numpy as np
 
-def detect(res, q=95):
-    return res>np.percentile(res,q)
+def compute_residuals(y_true, y_pred):
+    return y_true - y_pred
+
+def detect_peaks(residuals, percentile=95):
+    threshold = np.percentile(residuals, percentile)
+    return residuals > threshold, threshold
